@@ -8,7 +8,6 @@ D:\plh\Projects\DBDocument\DBDocument\obj\Debug\DBDocument.csproj.CoreCompileInp
 D:\plh\Projects\DBDocument\DBDocument\obj\Debug\DBDocument.csproj.CopyComplete
 D:\plh\Projects\DBDocument\DBDocument\obj\Debug\DBDocument.exe
 D:\plh\Projects\DBDocument\DBDocument\obj\Debug\DBDocument.pdb
-D:\plh\Projects\DBDocument\DBDocument\obj\Debug\DBDocument.csprojAssemblyReference.cache
 D:\plh\Projects\DBDocument\DBDocument\bin\Debug\BouncyCastle.Crypto.dll
 D:\plh\Projects\DBDocument\DBDocument\bin\Debug\ICSharpCode.SharpZipLib.dll
 D:\plh\Projects\DBDocument\DBDocument\bin\Debug\NPOI.dll

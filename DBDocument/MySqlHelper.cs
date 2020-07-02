@@ -254,7 +254,6 @@ namespace DBDocument
         /// <param name="cmdParms">执行命令的参数</param>
         private static void PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, CommandType cmdType, string cmdText, MySqlParameter[] cmdParms)
         {
-
             if (conn.State != ConnectionState.Open)
                 conn.Open();
 
@@ -272,6 +271,5 @@ namespace DBDocument
                     cmd.Parameters.Add(parm);
             }
         }
-
     }
 }

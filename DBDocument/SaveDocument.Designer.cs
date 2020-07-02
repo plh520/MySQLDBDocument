@@ -41,6 +41,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.brn_re = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lbl_info = new System.Windows.Forms.Label();
+            this.txt_SaveHtmlPath = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_SaveWordPath = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btn_SaveHTML = new System.Windows.Forms.Button();
             this.btn_SaveWord = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,10 +53,6 @@
             this.lv_tables = new System.Windows.Forms.ListView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.lv_TableInfo = new System.Windows.Forms.ListView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_SaveWordPath = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_SaveHtmlPath = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -127,9 +128,9 @@
             // 
             this.cmb_DBList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_DBList.FormattingEnabled = true;
-            this.cmb_DBList.Location = new System.Drawing.Point(145, 47);
+            this.cmb_DBList.Location = new System.Drawing.Point(158, 47);
             this.cmb_DBList.Name = "cmb_DBList";
-            this.cmb_DBList.Size = new System.Drawing.Size(266, 23);
+            this.cmb_DBList.Size = new System.Drawing.Size(245, 23);
             this.cmb_DBList.TabIndex = 8;
             this.cmb_DBList.SelectedIndexChanged += new System.EventHandler(this.cmb_DBList_SelectedIndexChanged);
             // 
@@ -175,6 +176,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lbl_info);
             this.groupBox2.Controls.Add(this.txt_SaveHtmlPath);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txt_SaveWordPath);
@@ -190,6 +192,50 @@
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "数据库列表";
+            // 
+            // lbl_info
+            // 
+            this.lbl_info.AutoSize = true;
+            this.lbl_info.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbl_info.ForeColor = System.Drawing.Color.Red;
+            this.lbl_info.Location = new System.Drawing.Point(52, 212);
+            this.lbl_info.Name = "lbl_info";
+            this.lbl_info.Size = new System.Drawing.Size(0, 19);
+            this.lbl_info.TabIndex = 16;
+            // 
+            // txt_SaveHtmlPath
+            // 
+            this.txt_SaveHtmlPath.Location = new System.Drawing.Point(158, 159);
+            this.txt_SaveHtmlPath.Name = "txt_SaveHtmlPath";
+            this.txt_SaveHtmlPath.Size = new System.Drawing.Size(245, 25);
+            this.txt_SaveHtmlPath.TabIndex = 15;
+            this.txt_SaveHtmlPath.Click += new System.EventHandler(this.txt_SaveHtmlPath_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(42, 162);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 15);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "HTML导出路径：";
+            // 
+            // txt_SaveWordPath
+            // 
+            this.txt_SaveWordPath.Location = new System.Drawing.Point(158, 101);
+            this.txt_SaveWordPath.Name = "txt_SaveWordPath";
+            this.txt_SaveWordPath.Size = new System.Drawing.Size(245, 25);
+            this.txt_SaveWordPath.TabIndex = 13;
+            this.txt_SaveWordPath.Click += new System.EventHandler(this.textBox1_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(42, 104);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(114, 15);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "word导出路径：";
             // 
             // btn_SaveHTML
             // 
@@ -214,7 +260,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(42, 50);
+            this.label5.Location = new System.Drawing.Point(54, 50);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 15);
             this.label5.TabIndex = 9;
@@ -261,40 +307,6 @@
             this.lv_TableInfo.Size = new System.Drawing.Size(820, 285);
             this.lv_TableInfo.TabIndex = 0;
             this.lv_TableInfo.UseCompatibleStateImageBehavior = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(42, 104);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 15);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "word导出路径：";
-            // 
-            // txt_SaveWordPath
-            // 
-            this.txt_SaveWordPath.Location = new System.Drawing.Point(158, 101);
-            this.txt_SaveWordPath.Name = "txt_SaveWordPath";
-            this.txt_SaveWordPath.Size = new System.Drawing.Size(245, 25);
-            this.txt_SaveWordPath.TabIndex = 13;
-            this.txt_SaveWordPath.Click += new System.EventHandler(this.textBox1_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(42, 162);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 15);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "HTML导出路径：";
-            // 
-            // txt_SaveHtmlPath
-            // 
-            this.txt_SaveHtmlPath.Location = new System.Drawing.Point(157, 159);
-            this.txt_SaveHtmlPath.Name = "txt_SaveHtmlPath";
-            this.txt_SaveHtmlPath.Size = new System.Drawing.Size(245, 25);
-            this.txt_SaveHtmlPath.TabIndex = 15;
-            this.txt_SaveHtmlPath.Click += new System.EventHandler(this.txt_SaveHtmlPath_Click);
             // 
             // SaveDocument
             // 
@@ -347,6 +359,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_SaveHtmlPath;
+        private System.Windows.Forms.Label lbl_info;
     }
 }
 

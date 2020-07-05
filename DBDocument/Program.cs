@@ -16,7 +16,7 @@ namespace DBDocument
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SaveDocument());
+            Application.Run(new Index());
         }
     }
 }
